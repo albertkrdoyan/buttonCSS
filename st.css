@@ -31,7 +31,7 @@ body{
     content: "";
     background-color: aquamarine;
     height: 8px;
-    width: 20px;
+    width: 7%;
     position: absolute;
     transform: skewX(50deg);
     transition: 1s ;
@@ -49,10 +49,10 @@ body{
 
 #btn:hover::after{
     transform: skewX(-50deg);
-    right: 90%;
+    right: 88%;
 }
 
 #btn:hover::before{
     transform: skewX(-50deg);
-    left: 90%;
+    left: 88%;
 }
