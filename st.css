@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    background: none;
+    border: 8px solid;
+    padding: 10px;
+    font-size: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+    outline: none;
+}
+
+#btn:hover{
+    cursor: pointer;
+}
+
+#btn::after, #btn::before{    
+    content: "";
+    background-color: aquamarine;
+    height: 8px;
+    width: 20px;
+    position: absolute;
+    transform: skewX(50deg);
+    transition: 1s ;
+}
+
+#btn::before{
+    top:-8px;
+    left: 5%;
+}
+
+#btn::after{
+    bottom: -8px;
+    right: 5%;
+}
+
+#btn:hover::after{
+    transform: skewX(-50deg);
+    right: 90%;
+}
+
+#btn:hover::before{
+    transform: skewX(-50deg);
+    left: 90%;
+}
